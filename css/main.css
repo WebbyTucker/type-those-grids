@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5rem;
 }
 
 *, *::before, *::after {
@@ -8,14 +10,13 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Merriweather", serif;
   margin: 1rem 1.5rem;
   padding: 1rem 1.5rem;
-  line-height: 1.5rem;
 }
 
 h1 {
 font-size: 1.8rem;
+font-weight: normal;
 }
 
 img {
@@ -27,7 +28,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2rem 2rem;
-  gap: .75rem
+  gap: .75rem;
 }
 
 .banner img {
@@ -36,7 +37,7 @@ img {
 }
 
 .banner h2 {
-/*  margin: 0;*/
+  font-weight: normal;
   color: #fff;
   font-size: 1.5rem;
   grid-column: 1 / -1;
@@ -59,23 +60,4 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: .75rem;
-/*  grid-template-rows: 1fr 1fr 1fr;*/
- /*grid-template-areas:
-    "box1 box1 box1"
-    "box2 box3 box4"
-    "box5 box6 box7"; */
 }
-
-/*
- main div:nth-child(5) {
-  grid-area: box5;
-}
-
-main div:nth-child(6) {
-  grid-area: box6;
-}
-
-main div:nth-child(7) {
-  grid-area: box7;
-}
-*/

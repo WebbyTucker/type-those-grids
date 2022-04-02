@@ -103,14 +103,19 @@ main div:nth-child(6) {
   align-self: start;
 }
 
-main div h2 {
+figcaption {
   margin: 1rem 1.5rem;
   font-weight: normal;
   font-style: italic;
 }
 
- main div dl {
+main div dl {
   margin: 1rem 1.5rem;
   font-weight: normal;
   font-style: italic;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }

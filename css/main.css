@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
+  margin: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 *, *::before, *::after {
@@ -10,13 +12,24 @@ html {
 
 body {
   background-color: #fff;
-  margin: 1rem 1.5rem;
-  padding: 1rem 1.5rem;
+
+}
+header {
+  /*grid-area: box1;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.8rem 1fr 1.5rem 2.5rem;
+  gap: .75rem;
 }
 
-h1 {
+header h1 {
+  margin: 1rem 1.5rem;
   font-size: 1.8rem;
   font-weight: normal;
+  font-style: italic;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  align-self: center;
 }
 
 img {
@@ -24,34 +37,30 @@ img {
   display: block;
 }
 
-.banner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2rem 2rem;
-  gap: .75rem;
-}
-
-.banner img {
+header img {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
+  /*align-self: stretch;*/
 }
 
-.banner h2 {
+header h2 {
+  margin: 1rem 1.5rem;
   font-weight: normal;
+  font-style: italic;
   color: #fff;
   font-size: 1.5rem;
   grid-column: 1 / -1;
-  grid-row: 2;
-  align-self: start;
+  grid-row: 3;
+  align-self: center;
   z-index: 1;
 }
 
-.banner p {
-  margin: 0;
+header p {
+  margin: 0 1.5rem;
   color: #fff;
   font-size: 1rem;
   grid-column: 1 / -1;
-  grid-row: 3;
+  grid-row: 4;
   align-self: start;
   z-index: 1;
 }
@@ -59,5 +68,50 @@ img {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6";
   gap: .75rem;
 }
+
+main div:nth-child(1){
+  grid-area: box1;
+  align-self: end;
+}
+
+main div:nth-child(2){
+  grid-area: box2;
+  align-self: end;
+}
+
+main div:nth-child(3){
+  grid-area: box3;
+  align-self: end;
+}
+
+main div:nth-child(4){
+  grid-area: box4;
+  align-self: start;
+}
+
+main div:nth-child(5){
+  grid-area: box5;
+  align-self: start;
+}
+
+main div:nth-child(6){
+  grid-area: box6;
+  align-self: start;
+}
+
+main div h2{
+  margin: 1rem 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+}
+ main div dl{
+   margin: 1rem 1.5rem;
+   font-weight: normal;
+   font-style: italic;
+ }

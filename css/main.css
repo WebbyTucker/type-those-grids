@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
-  margin: 0 1.5rem;
+  margin: 1.5rem 0 0;
   padding: 0;
 }
 
@@ -106,7 +106,7 @@ main div:nth-child(6) {
 figcaption {
   margin: 1rem 1.5rem;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: normal;
   font-style: italic;
 }
 

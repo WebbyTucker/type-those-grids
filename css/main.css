@@ -110,7 +110,7 @@ figcaption {
 }
 
 main div dl {
-  margin: 1rem 1.5rem;
+  margin: 0 1.5rem;
   font-weight: normal;
   font-style: italic;
 }

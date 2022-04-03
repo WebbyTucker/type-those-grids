@@ -2,8 +2,8 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
-  margin: 1rem 1.5rem;
-  padding: 1rem 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 *, *::before, *::after {
@@ -49,7 +49,7 @@ header h2 {
   font-size: 1.5rem;
   grid-column: 1 / -1;
   grid-row: 3;
-  align-self: center;
+  align-self: start;
   z-index: 1;
 }
 
@@ -105,7 +105,8 @@ main div:nth-child(6) {
 
 figcaption {
   margin: 1rem 1.5rem;
-  font-weight: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
   font-style: italic;
 }
 

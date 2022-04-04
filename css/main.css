@@ -120,3 +120,7 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+dd {
+  margin: 0 1rem;
+}

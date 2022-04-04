@@ -104,14 +104,14 @@ main div:nth-child(6) {
 }
 
 figcaption {
-  margin: 1.5rem 1.5rem 0;
+  margin: 1.5rem 1rem 0;
   font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
 }
 
 main div dl {
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   font-weight: normal;
   font-style: italic;
 }
